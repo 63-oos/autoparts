@@ -32,7 +32,7 @@ input, textarea, select {
 .app-container {
   width: 100%;
   min-height: 100vh;
- /* background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #9a3412 100%);*/
+  /*background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #9a3412 100%);*/
   background:white;
   position: relative;
 }
@@ -73,14 +73,21 @@ input, textarea, select {
 
 .home-header {
   width: 100%;
-  background: url(https://tse1.mm.bing.net/th/id/OIP.ta0sKpScjSjTeBbJtCaCzwHaFv?rs=1&pid=ImgDetMain&o=7&rm=3);
   background: rgba(227, 6, 19, 1);
   color: white;
   padding: 1rem 1.5rem;
   text-align: center;
 }
 
+.home-logo{
+  margin-left: 100px;
+ /* margin-right: auto;*/
+  margin-top:1px
+}
+
 .home-title {
+  display: flex;
+  align-items: center;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 0.75rem;
@@ -109,7 +116,7 @@ input, textarea, select {
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -150,8 +157,8 @@ input, textarea, select {
 /* ===== CATEGORY CARD ===== */
 .category-card {
   position: relative;
-  background: #374151;
-  border-radius: 1.5rem;
+  background: #ffffff;
+  /*border-radius: 1.5rem;*/
   overflow: hidden;
   cursor: pointer;
   transform: scale(1);
@@ -160,8 +167,8 @@ input, textarea, select {
 }
 
 .category-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+/*  transform: scale(1.05);*/
+/*  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);*/
 }
 
 .category-image {
@@ -171,12 +178,13 @@ input, textarea, select {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.7;
-  transition: opacity 0.3s;
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .category-card:hover .category-image {
-  opacity: 0.9;
+  opacity: 1;
+  transform: scale(1.1) ;
 }
 
 .category-overlay {

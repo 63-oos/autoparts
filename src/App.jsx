@@ -452,8 +452,14 @@ function HomeView({ categories, onCategoryClick, onAdminClick }) {
     <div className="home-view">
       <div className="home-header">
         <h1 className="home-title">
+        <img src = "https://www.febi.com/typo3conf/ext/febi_theme/Resources/Public/Images/logo.svg"
+        alt height = "70" width = "80"
+        className="home-logo"
+        />
+          {/*
           <span className="title-auto">AUTO</span>
           <span className="title-parts">PARTS</span>
+          */}
         </h1>
       </div>
 
@@ -469,7 +475,7 @@ function HomeView({ categories, onCategoryClick, onAdminClick }) {
         <p>Touch screen to interact</p>
         <div className="footer-actions">
           <button onClick={onAdminClick} className="footer-link">Admin Panel</button>
-          <p className="footer-text">Powered by AutoParts Kiosk</p>
+         {/* <p className="footer-text">Powered by AutoParts Kiosk</p>*/}
         </div>
       </div>
     </div>
@@ -482,6 +488,7 @@ function CategoryCard({ category, onClick }) {
       <img 
         src={category.image || PLACEHOLDER_IMAGE} 
         alt={category.name} 
+        height="529" weight = "690"
         className="category-image"
       />
       <div className="category-overlay"></div>
